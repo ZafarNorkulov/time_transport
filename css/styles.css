@@ -13,6 +13,8 @@ h2 {
     background: #28a745!important;
 }.btn:hover{ 
     background: #218838!important;
+}.btn:focus{
+    color: #F8F9FA!important;
 }
 i{
     font-size: 56px;
