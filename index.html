@@ -19,8 +19,8 @@
             <div class="row mb-3">
                 <h2 class="text-danger mb-3">Who goes first ?!</h2>
                 <article class="w-75 mx-auto d-flex align-items-center bg-light p-4">
-                        <span>Distance</span>
-                        <input type="number" class="form-control mx-3" id="inputValue" placeholder="100km" required>
+                        <label for="inputValue">Distance</label>
+                        <input type="number"  class="form-control mx-3" id="inputValue" min="1" placeholder="100km" required>
                         <button class="btn btn-success form-control" id="inputBtn">Calculate</button>
                 </article>
             </div>
@@ -28,30 +28,31 @@
                 <div class="card w-50 py-3">
                     <i class="fa-solid fa-person-walking text-info"></i>
                     <span class="text-info">Walk</span>
-                    <span class="text-success" id="walkTimes">n Hours</span>
+                    <span class="text-success" id="walkTimes">0</span>
                 </div>
                 <div class="card w-50 py-3">
                     <i class="fa-solid fa-bicycle text-info"></i>
                     <span class="text-info">Bike</span>
-                    <span class="text-success" id="bikeTimes">n Hours</span>
+                    <span class="text-success" id="bikeTimes">0</span>
                 </div>
                 <div class="card w-50 py-3">
                     <i class="fa-solid fa-car text-info"></i>
                     <span class="text-info">Car</span>
-                    <span class="text-success" id="carTimes">n Hours</span>
+                    <span class="text-success" id="carTimes">0</span>
                 </div>
                 <div class="card w-50 py-3">
                     <i class="fa-solid fa-plane-up text-info"></i>
                     <span class="text-info">Airplane</span>
-                    <span class="text-success" id="airplaneTimes">n Hours</span>
+                    <span class="text-success" id="airplaneTimes">0</span>
                 </div>
             </div>
+            <span class="error bg-danger mt-4 p-4 text-light" id="error"></span>
         </div>
         
     </main>
 
 
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 
 </html>
